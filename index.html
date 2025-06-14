@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Education Survey – Sri Lanka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>📚 AI Education Survey – Sri Lanka</h1>
+    <p>Help us build a smart education platform. Takes only 3–5 minutes!</p>
+    
+    <form id="surveyForm">
+      <label>Your Role:
+        <select name="role" required>
+          <option value="">Select one</option>
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>Principal</option>
+          <option>Lecturer</option>
+          <option>Tuition Provider</option>
+        </select>
+      </label>
+
+      <label>Name: <input type="text" name="name" /></label>
+      <label>Email: <input type="email" name="email" /></label>
+      <label>Institution: <input type="text" name="institution" /></label>
+      <label>Province/District: <input type="text" name="province" /></label>
+
+      <label>Do you use an LMS?
+        <select name="lms">
+          <option value="">Select</option>
+          <option>Yes</option>
+          <option>No</option>
+          <option>Not sure</option>
+        </select>
+      </label>
+
+      <label>Materials You Have:
+        <textarea name="materials" placeholder="e.g., Syllabi, Past Papers, Textbooks"></textarea>
+      </label>
+
+      <label>Willing to upload to AI system?
+        <select name="upload">
+          <option>Yes</option>
+          <option>No</option>
+          <option>Maybe</option>
+        </select>
+      </label>
+
+      <label>Rate Features You Like:
+        <textarea name="features" placeholder="e.g., AI guide 5/5, Chatbot 4/5, Timetable 3/5"></textarea>
+      </label>
+
+      <label>Main Challenges:
+        <textarea name="challenges" placeholder="e.g., No digital access, no guides, etc."></textarea>
+      </label>
+
+      <label>Suggestions or Ideas:
+        <textarea name="suggestions"></textarea>
+      </label>
+
+      <label>Want early access or pilot participation?
+        <select name="pilot">
+          <option>Yes</option>
+          <option>No</option>
+          <option>Maybe</option>
+        </select>
+      </label>
+
+      <button type="submit">📩 Submit Response</button>
+    </form>
+
+    <p id="responseMsg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
