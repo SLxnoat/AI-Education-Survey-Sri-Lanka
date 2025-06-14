@@ -5,7 +5,7 @@ document.getElementById("surveyForm").addEventListener("submit", function (e) {
   const data = {};
   formData.forEach((value, key) => (data[key] = value));
 
-  fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbw6HjG5G7RT59EcHoiveE7oCeM-DMNTjaKdq0u3ULAs46yrbqnCGc18RXQkWnmYFve_lw/exec", {
     method: "POST",
     body: JSON.stringify(data),
   })
